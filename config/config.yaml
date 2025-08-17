@@ -11,3 +11,11 @@ data_transformation:
   data_path : artifacts/data_ingestion/samsum_dataset
   tokenizer_name : facebook/bart-large-cnn
 
+
+model_trainer:
+  root_dir : artifacts/model_trainer
+  data_path_train : artifacts/data_transformation/train_dataset
+  data_path_test : artifacts/data_transformation/test_dataset
+  data_path_validation : artifacts/data_transformation/validation_dataset
+  model_ckpt : facebook/bart-large-cnn
+
